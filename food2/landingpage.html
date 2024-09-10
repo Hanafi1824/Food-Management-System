@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Welcome</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logos/chicken.png" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .star-rating {
+            font-size: 35px;
+            padding: 10px;
+            color: #ffffff;
+            text-align: center;
+            direction: rtl;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            float: none;
+            padding: 0 5px;
+        }
+
+        .star-rating label:before {
+            content: "☆";
+            /* outlined star character */
+        }
+
+        .star-rating input:hover~label:before,
+        .star-rating input:checked~label:before {
+            content: "★";
+            /* filled star character */
+        }
+
+        .star-rating input:checked~label {
+            color: #fd4;
+        }
+
+        .star-rating:not(:checked)>label:hover,
+        .star-rating:not(:checked)>label:hover~label {
+            color: #fd4;
+        }
+
+        .star-rating input:checked+label:hover,
+        .star-rating label:hover~input:checked~label,
+        .star-rating input:checked~label:hover~label {
+            color: #fd4;
+        }
+
+        .justify-aligned {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="./assets/img/logos/chicken.png" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="login.html" onclick="logout()">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead-->
+    <header class="masthead" style="background-image: url('assets/img/citybackground.jpg');">
+        <div class="container">
+            <div class="masthead-subheading">Welcome To MakanMakan!</div>
+            <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Check Our Website</a>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Menu</h2>
+                <h3 class="section-subheading text-muted">
+                    Choose your favourite food.
+                </h3>
+            </div>
+            <div class="row" id="menu">
+            </div>
+        </div>
+    </section>
+
+    <!-- about us -->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About Us</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="text-muted justify-aligned">
+
+                        We are a team of passionate individuals who love food and technology. We believe that food
+                        brings people together and that technology can help make the world a better place. Our mission
+                        is to create a platform that connects people with great food and great experiences. We are
+                        committed to providing our customers with the best possible service and the best possible food.
+                        We are constantly innovating and improving our platform to make it easier for our customers to
+                        order food and enjoy great meals. We are always looking for ways to improve and grow, and we
+                        welcome feedback from our customers. We are excited to be part of the food industry and to help
+                        people enjoy great food and great experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- vision and mission -->
+    <section class="page-section bg-light" id="vision">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Our Vision</h2>
+                <h3 class="section-subheading text-muted">
+                    To be the leading food delivery platform in the world.
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="text-muted justify-aligned">
+                        Our vision is to be the leading food delivery platform in the world. We want to connect people
+                        with great food and great experiences. We want to make it easy for people to order food and
+                        enjoy
+                        great meals. We want to help restaurants grow and thrive. We want to create a platform that
+                        brings people together and makes the world a better place. We are committed to providing our
+                        customers with the best possible service and the best possible food. We are constantly
+                        innovating
+                        and improving our platform to make it easier for our customers to order food and enjoy great
+                        meals. We are always looking for ways to improve and grow, and we welcome feedback from our
+                        customers. We are excited to be part of the food industry and to help people enjoy great food
+                        and
+                        great experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" id="mission">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Our Mission</h2>
+                <h3 class="section-subheading text-muted">
+                    Delivering delicious meals to your doorstep with exceptional service and efficiency.
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="text-muted justify-aligned">
+                        Our mission is to revolutionize the food delivery experience by connecting people with their
+                        favorite meals
+                        from top-rated restaurants. We strive to offer fast, reliable, and convenient delivery services,
+                        ensuring that
+                        every order is handled with care and precision. Our goal is to support local businesses by
+                        providing them with
+                        a robust platform to reach more customers and grow their brands. We are dedicated to maintaining
+                        the highest
+                        standards of quality and customer satisfaction, constantly seeking innovative solutions to
+                        enhance our service.
+                        At our core, we believe that great food brings people together, and we are passionate about
+                        making delicious meals
+                        accessible to everyone, anytime and anywhere. We are committed to sustainability and ethical
+                        practices, ensuring
+                        that our operations benefit both the community and the environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                <h3 class="section-subheading text-muted">
+                    Backbone of the company.
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="./assets/img/team/hazeeq.jpg" alt="..." />
+                        <h4>Hazeeq Haikal</h4>
+                        <p class="text-muted">Creative Visionary</p>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:2022676488@student.uitm.edu.my"
+                            aria-label="Hazeeq Haikal Email"><i class="fas fa-envelope"></i></a>
+                        <a class="btn btn-dark btn-social mx-2"
+                            href="https://www.linkedin.com/in/muhammad-hazeeq-haikal-149449246/"
+                            aria-label="Hazeeq LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/khairul.jpg" alt="..." />
+                        <h4>Che Khairul</h4>
+                        <p class="text-muted">Market Mastermind</p>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:2022465974@student.uitm.edu.my"
+                            aria-label="Che Khairul Email"><i class="fas fa-envelope"></i></a>
+                        <a class="btn btn-dark btn-social mx-2"
+                            href="https://www.linkedin.com/in/che-khairul-azri-4769702b3/"
+                            aria-label="Khairul LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/hanafi.jpg" alt="..." />
+                        <h4>Hanafi</h4>
+                        <p class="text-muted">Innovation Architect</p>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:2022465112@student.edu.my"
+                            aria-label="Hanafi Email"><i class="fas fa-envelope"></i>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/hanafihasrat"
+                                aria-label="Hanafi LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- one more member -->
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/azib.jpg" alt="..." />
+                        <h4>Azib Izzudin</h4>
+                        <p class="text-muted">Software Virtuoso</p>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:2022854484@student.uitm.edu.my"
+                            aria-label="Azib Email"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/azib-izzudin"
+                            aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+    </section>
+
+    <!-- privacy policy -->
+    <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body
+                ">
+                    <p>Our privacy policy is simple. We do not store any personal information about you. We do not
+                        share
+                        your information with anyone. We do not track you. We do not use cookies. We do not use
+                        Google
+                        Analytics. We do not use any third-party services that track you. We do not use any
+                        third-party
+                        services that store your information. We do not use any third-party services that share your
+                        information. We do not use any third-party services that track you. We do not use any
+                        third-party services that store your information. We do not use any third-party services
+                        that
+                        share your information.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Use Modal -->
+    <div class="modal fade" id="termsOfUseModal" tabindex="-1" aria-labelledby="termsOfUseModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsOfUseModalLabel">Terms of Use</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>By using this website, you agree to comply with the following terms:</p>
+                    <ul>
+                        <li>Use the website for lawful purposes only.</li>
+                        <li>Refrain from any activity that harms others or violates their rights.</li>
+                        <li>Respect the privacy and security of other users.</li>
+                        <li>Avoid infringing on intellectual property, copyright, trademark, or patent rights.</li>
+                        <li>Do not use the website to distribute malware or other malicious software.</li>
+                        <li>Do not use the website to engage in any illegal activity.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- profile modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Profile</h4>
+                                <hr>
+                                <div class="form-group" id="profileForm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="editButton" onclick="editProfile()">Edit</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; MakanMakan Sdn Bhd</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#privacyPolicyModal"
+                        data-bs-toggle="modal">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#termsOfUseModal" data-bs-toggle="modal">Terms
+                        of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals-->
+    <div id="autoportfolio">
+    </div>
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
